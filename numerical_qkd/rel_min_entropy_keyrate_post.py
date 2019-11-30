@@ -1,8 +1,7 @@
 """
 rel_min_entropy_keyrate_post
 ====================
-Calculates finite secret-key rate using a general prototypical protocol
-that allows for postselection.
+Calculates postselected secret keyrate by solving for Hmin
 
 Author: Darius Bunandar (dariusb@mit.edu)
 
@@ -20,7 +19,7 @@ class PostselectedRelativeMinEntropyKeyrate(PostselectedKeyrate):
     """
     PostselectedRelativeMinEntropyKeyrate
 
-    Computes numerical finite key rate of a QKD protocol by solving
+    Computes postselected numerical key rate of a QKD protocol by solving
     min-entropy: H_{min}(Z|E) where Z is Alice's classical information.
 
     With post-selection, the Hilbert space of interests are:

@@ -1,8 +1,8 @@
 """
 rel_entropy_keyrate_post
 ====================
-Calculates finite secret-key rate using a general prototypical protocol
-that allows for postselection.
+Calculates postselected secret-key rate by approximately solving the
+quantum relative entropy.
 
 Author: Darius Bunandar (dariusb@mit.edu)
 
@@ -20,7 +20,7 @@ from numerical_qkd import np_array_to_matlab, general_kron, PostselectedKeyrate
 
 class PostselectedRelativeEntropyKeyrate(PostselectedKeyrate):
     """
-    RelativeEntropyKeyrate
+    PostselectedRelativeEntropyKeyrate
 
     Computes the postselected numerical key rate of a QKD protocol 
     by solving the relative quantum entropy: 
